@@ -2,18 +2,10 @@
 A simple pose detector which runs with the realsense framework.
 
 ### Install & Run
+The project is managed with [UV](https://docs.astral.sh/uv/getting-started/installation/#winget)
 
-Currently this is only tested on Windows and macOS. It's recommended to use Python3 (`>3.7`) and a virtual environment.
-
-```bash
-python install -r requirements.txt
-```
-
-To run an example use the basic python command to start up the script.
-
-```bash
-# start pose detection with realsense camera
-python pose.py
+```sh
+uv run pose.py
 ```
 
 ### Full-Body Pose Landmark Model (BlazePose Tracker)
