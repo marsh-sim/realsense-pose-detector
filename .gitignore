@@ -1,3 +1,6 @@
+# Local copy of the dialect repository (not a submodule)
+mavlink_repo
+
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 

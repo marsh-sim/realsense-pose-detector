@@ -1,16 +1,23 @@
 [project]
 name = "realsense-pose-detector"
 version = "0.1.0"
-description = "A simple pose detector which runs with the realsense framework."
+description = "Detect human body pose for MARSH using RealSense camera and MediaPipe model"
 readme = "README.md"
 license = "MIT"
 authors = [
   { name = "Florian Bruggisser", email = "florian@bildspur.ch" },
+  { name = "Marek S. Łukasiewicz", email = "marek@lukasiewicz.tech" },
+  { name = "Thomas Soldan", email = "thomasoldan@gmail.com" },
 ]
 requires-python = ">=3.7"
 dependencies = [
     "mediapipe>=0.10.10",
     "opencv-python>=4.11.0.86",
+    "pymavlink>=2.4.49",
     "pyrealsense2>=2.55.1.6486",
-    "python-osc>=1.8.3",
+]
+
+[dependency-groups]
+dev = [
+    "black>=23.3.0",
 ]
