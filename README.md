@@ -12,7 +12,9 @@ uv run pose.py
 
 ## Full-Body Pose Landmark Model (BlazePose Tracker)
 
-The landmark model currently included in MediaPipe Pose predicts the location of 33 full-body landmarks (see figure below), each with (`x, y, z, visibility`). Note that the z value should be discarded as the model is currently not fully trained to predict depth, but this is something we have on the roadmap.
+The landmark model currently included in MediaPipe Pose predicts the location of 33 full-body landmarks (see figure below), each with (`x, y, z, visibility`).
+The current model does not use depth data directly, we're projecting the positions identified on 2D image into 3D space using RealSense afterwards.
+This means that the position of points is centered on the joint in 2D, but on the closest surface to camera in depth.
 
 ![Pose Description](readme/pose_tracking_full_body_landmarks.png)
 
